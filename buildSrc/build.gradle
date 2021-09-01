@@ -186,6 +186,8 @@ if (project != rootProject) {
     distribution project(':distribution:archives:linux-tar')
     distribution project(':distribution:archives:oss-linux-tar')
     distribution project(':distribution:archives:oss-linux-aarch64-tar')
+    distribution project(':distribution:archives:linux-ppc64le-tar')
+    distribution project(':distribution:archives:oss-linux-ppc64le-tar')
 
     integTestRuntimeOnly(project(":libs:elasticsearch-core"))
   }

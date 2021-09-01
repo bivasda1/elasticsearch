@@ -160,6 +160,13 @@ distribution_archives {
     }
   }
 
+  linuxPpc64leTar {
+    archiveClassifier = 'linux-ppc64le'
+    content {
+      archiveFiles(modulesFiles('linux-ppc64le'), 'tar', 'linux', 'ppc64le', false, true)
+    }
+  }
+
   linuxTar {
     archiveClassifier = 'linux-x86_64'
     content {
@@ -178,6 +185,13 @@ distribution_archives {
     archiveClassifier = 'linux-x86_64'
     content {
       archiveFiles(modulesFiles(true, 'linux-x86_64'), 'tar', 'linux', 'x64', true, true)
+    }
+  }
+
+ ossLinuxPpc64leTar {
+    archiveClassifier = 'linux-ppc64le'
+    content {
+      archiveFiles(modulesFiles(true, 'linux-ppc64le'), 'tar', 'linux', 'ppc64le', true, true)
     }
   }
 
